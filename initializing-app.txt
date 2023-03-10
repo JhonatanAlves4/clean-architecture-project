@@ -1,0 +1,19 @@
+## create app
+
+npm i typescript --save-dev
+npx tsc --init
+
+## init app
+
+npx tsc
+
+## tslint
+
+npm i tslint --save-dev
+npx tslint --init
+
+## jest & swc
+
+npm i jest @types/jest ts-node --save-dev
+npm i @swc/jest @swc/cli @swc/core
+npx jest --init
