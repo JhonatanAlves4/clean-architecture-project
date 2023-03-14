@@ -28,6 +28,10 @@ export default class Customer {
   public set Address(address: Address) {
     this._address = address;
   }
+
+  public get Address() : Address {
+    return this._address;
+  }
   
   validate() {
     if (this._id.length === 0) {
