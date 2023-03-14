@@ -13,6 +13,22 @@ export default class Address {
     this.validate();
   }
 
+  public get street(): string {
+    return this._street;
+  }
+
+  public get number(): number {
+    return this._number;
+  }
+
+  public get zip(): string {
+    return this._zip;
+  }
+
+  public get city(): string {
+    return this._city;
+  }
+
   validate() {
     if (this._street.length === 0) {
       throw new Error("Street is required");
@@ -29,6 +45,6 @@ export default class Address {
   }
 
   toString() {
-    return `${this._street}, ${this._number}, ${this._zip}, ${this._city},`
+    return `${this._street}, ${this._number}, ${this._zip}, ${this._city},`;
   }
 }
