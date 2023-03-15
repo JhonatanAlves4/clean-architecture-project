@@ -14,6 +14,18 @@ export default class Order {
     this.validate();
   }
 
+  public get id(): string {
+    return this._id;
+  }
+
+  public get customerId(): string {
+    return this._customerId;
+  }
+
+  public get items(): OrderItem[] {
+    return this._items;
+  }
+
   validate(): boolean {
     if (this._id.length === 0) {
       throw new Error("Id is required");
@@ -24,7 +36,7 @@ export default class Order {
     if (this._items.length === 0) {
       throw new Error("Item quantity must be greater than 0");
     }
-    if (this._items.some(item => item.quantity <= 0)) {
+    if (this._items.some((item) => item.quantity <= 0)) {
       throw new Error("Quantity must be greater than zero");
     }
     return true;

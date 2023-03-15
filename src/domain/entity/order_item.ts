@@ -13,6 +13,18 @@ export default class OrderItem {
     this._quantity = quantity;
   }
 
+  public get id(): string {
+    return this._id;
+  }
+  
+  public get name() : string {
+    return this._name;
+  }
+  
+  public get productId() : string {
+    return this._productId;
+  }
+  
   public get price(): number {
     return this._price * this._quantity;
   }
