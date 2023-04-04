@@ -6,6 +6,6 @@ export default class SendEmailWhenProductIsCreatedHandler
   implements EventHandlerInterface<ProductCreatedEvent>
 {
   handle(event: eventInterface): void {
-    console.log(`Sending email to email`);
+    console.log(`Sending email to email`); // Enviando para o RabbitMQ...
   }
 }
