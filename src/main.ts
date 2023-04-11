@@ -1,7 +1,7 @@
-import Address from "./domain/entity/address";
+import Address from "./domain/customer/value-object/address";
 import Customer from "./domain/entity/custumer";
 import Order from "./domain/entity/order";
-import OrderItem from "./domain/entity/order_item";
+import OrderItem from "./domain/checkout/entity/order_item";
 
 
 // ID Relation
